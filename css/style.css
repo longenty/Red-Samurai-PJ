@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.top{
+  background-color: #1a1a1a;
+
+}
+
+/*
+.contact__part {
+  display: inline-block;
+
+}
+
+
+.contact__right{
+  position: absolute;
+  right: 20px;
+}
+
+.contact_item{
+  display: inline-block;
+  padding: 20px 10px;
+
+}
+
+*/
+
+.row:before,.row:after,
+.container:before, .container:after{
+  content: '';
+  display: table;
+}
+.row:after,
+.container:after{
+  clear: both;
+}
+
+.top__contacts{
+  float: left;
+}
+
+.top__social,.top__register{
+  float: right;
+}
+
+.top__item{
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.top__contacts__item{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.mail-icon,.phone-icon,
+.shutdown-icon,.lock-icon{
+  max-width: 20px;
+  position: relative;
+  bottom: 2px;
+}
+
+
+
+.mail-address, .tel-no, .not-a-member{
+  color: #cccccc;
+}
+
+
+
+
+
+
