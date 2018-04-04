@@ -15,8 +15,12 @@ a{
   color: #ffffff;
 }
 
+a:hover {
+  text-decoration: none;
+}
 .top{
   background-color: #1a1a1a;
+  max-height: 50px;
 
 }
 
@@ -50,18 +54,23 @@ a{
   clear: both;
 }
 
+.top{
+  font-size: 13px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .top__contacts{
   float: left;
 }
 
-.top__social,.top__register{
+.top__register,.top__social{
   float: right;
 }
 
 .top__item{
   float: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
 
 }
 
@@ -73,10 +82,11 @@ a{
 
 .mail-icon,.phone-icon,
 .shutdown-icon,.lock-icon{
-  max-width: 20px;
+  max-width: 18px;
   position: relative;
   bottom: 2px;
 }
+
 
 
 
@@ -84,8 +94,30 @@ a{
   color: #cccccc;
 }
 
+.mail-address{
+  text-transform: lowercase;
+}
 
+.login{
+  padding-right: 10px;
+  padding-left: 5px;
+  border-right: 2px solid red;
+}
 
+.not-a-member{
+  padding-left: 10px;
+}
+
+.register{
+  padding: 0 2px;
+}
+
+.facebook-icon, .twitter-logo,.googleplus-logo{
+  max-height: 35px;
+  position: relative;
+  bottom:10px;
+  margin: 0 10px;
+}
 
 
 
