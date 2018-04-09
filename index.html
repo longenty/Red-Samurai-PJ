@@ -4,71 +4,87 @@
      <title>Red Samurai</title>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+     <!-- Font -->
      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
      <link href="https://fonts.googleapis.com/css?family=Oswald:300,700" rel="stylesheet">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <!-- Boostrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
      <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
 <section class="top">
      <div class="container">
-          <div class="top__parts top__contacts">
-                    <a href="#" class="top__item top__contacts__item">
-                         <img class="mail-icon" src="image/mail-icon.png" alt="mail icon" />
+          <div class="top-contacts">
+               <a href="#" class="top-contacts__link">
+                    <i class="fa fa-envelope fa-fw" aria-hidden="true"></i> question@redsamurai.com
+               </a>
+               <a href="#" class="top-contacts__link">
+                    <i class="fa fa-phone fa-fw" aria-hidden="true"></i> (044)122-12345555/1235
+               </a>
+          </div>
+          <div class="float-right">
+               <div class="top-register">
+                    <a href="#" class="top-register__link"> <i class="fa fa-power-off fa-lg"></i> login</a>
+                    <span class="not-a-member top-register__link">Not a Member?</span>
+                    <a href="#" class="top-register__link">register now <i class="fa fa-lock fa-lg"></i></a>
+               </div>
+               <div class="top-social">
+                    <a class="facebook top-social__link" href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
                     </a>
-                    <a href="#" class="mail-address top__item top__contacts__item">question@redsamurai.com</a>
-                    <a href="#" class="top__item top__contacts top__contacts__item">
-                         <img class="phone-icon" src="image/white-phone-512.png" alt="phone icon" />
+                    <a class="twitter top-social__link" href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
                     </a>
-                    <a href="#" class="tel-no top__item top__contacts top__contacts__item">
-                         (044)122-12345555/1235
+                    <a class="googleplus top-social__link" href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                    </span>
                     </a>
+               </div>
+
           </div>
 
-          <div class="top__parts top__social">
-               <a class="facebook top__item top__social__item" href="#">
-                    <img src="image/facebook-logo.png" alt="facebook logo" class="facebook-icon">
-               </a>
-               <a class="twitter top__item top__social__item" href="#">
-                    <img src="image/twitter-logo.png" alt="twitter logo" class="twitter-logo">
-               </a>
-               <a class="googleplus top__item top__social__item" href="#">
-                    <img src="image/googleplus-logo.png" alt="" class="googleplus-logo">
-               </a>
-          </div>
-
-          <div class="top__parts top__register">
-               <div class="top__item top__register__item">
-                    <img class="shutdown-icon" src="image/white-shutdown-512.png" alt="shutdown icon" >
-               </div>
-               <a href="#" class="login top__item top__register__item">login</a>
-               <span class="not-a-member top__item top__register__item">Not a Member?</span>
-               <a href="#" class="register top__item top__register__item">register now</a>
-               <div class="top__item top__register__item">
-                    <img class="lock-icon" src="image/lock-icon.png" alt="lock icon" >
-               </div>
-          </div>
      </div>
 </section>
 <section class="navigation">
      <div class="container">
-          <span class="logo-helper"></span>
-          <a href="#" class="link-to-home">
-               <img id="logo" src="image/restaurant-logo.png" alt="restaurant logo">
-          </a>
-          <ul class="menu">
-               <li class="menu__item"><a href="#">home</a></li>
-               <li class="menu__item"><a href="#">specials</a></li>
-               <li class="menu__item"><a href="#">history</a></li>
-               <li class="menu__item"><a href="#">shop</a></li>
-               <li class="menu__item"><a href="#">combos</a></li>
-               <li class="menu__item">
-                    <a href="#">cart</a>
-                    <span class="cart-item-number">2</span>
-               </li>
-               <li class="menu__item"><a href="#">contact</a></li>
-          </ul>
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+               <a class="navbar-brand" href="#"><img id="logo" src="image/restaurant-logo.png" alt="restaurant logo"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav menu ml-auto">
+                         <li class="nav-item menu__item"><a href="#" class="nav-link">home</a></li>
+                         <li class="nav-item menu__item"><a href="#" class="nav-link" >specials</a></li>
+                         <li class="nav-item menu__item"><a href="#" class="nav-link">history</a></li>
+                         <li class="nav-item menu__item"><a href="#" class="nav-link">shop</a></li>
+                         <li class="nav-item menu__item"><a href="#" class="nav-link">combos</a></li>
+                         <li class="nav-item menu__item">
+                              <a href="#" class="nav-link">cart</a>
+                              <span class="cart-item-number">2</span>
+                         </li>
+                         <li class="nav-item menu__item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Dropdown link
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                   <a class="dropdown-item" href="#">Action</a>
+                                   <a class="dropdown-item" href="#">Another action</a>
+                                   <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                         </li>
+                    </ul>
+               </div>
+          </nav>
      </div>
 </section>
 
@@ -76,12 +92,18 @@
      <div class="banner__overlay">
      </div>
           <div class="container">
-               <h2 class="banner__title">
-                    <span class="banner__title__span">
-                    the best <span class="banner__title__red">asian cuisine</span>
-                    </span>
-                    <span class="banner__title__span"> in all the city</span></h2>
-               <a href="#" class="banner__order">start your online order!</a>
+               <div class="row">
+                    <div class="col-sm-6">
+                         <div class="banner-content">
+                              <h2 class="banner__title">
+                                   the best <span class="banner__title__red">asian cuisine</span> in all the city
+                              </h2>
+                              <a href="#" class="btn btn-lg banner__btn text-uppercase">start your online order!</a>
+                         </div>
+                    </div>
+
+               </div>
+
           </div>
 
 
@@ -101,7 +123,7 @@
                               <p class="food__desc food-item__component">
                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                                    consectetur</p>
-                         <a href="#" class="food-item__link food-item__component">go to sushi</a>
+                         <a href="#" class="btn btn-danger foot-item__link">go to sushi</a>
                     </div>
 
                     </div>
@@ -112,7 +134,7 @@
                               <p class="food__desc food-item__component">
                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                                    consectetur</p>
-                              <a href="#" class="food-item__link food-item__component">go to soups</a>
+                              <a href="#" class="btn btn-danger foot-item__link">go to sushi</a>
                          </div>
 
                     </div>
@@ -123,7 +145,11 @@
                               <p class="food__desc food-item__component">
                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                                    consectetur</p>
-                              <a href="#" class="food-item__link food-item__component">go to desserts</a>
+                              <a href="#" class="btn btn-danger foot-item__link">go to sushi</a>
+                              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                   <button type="button" class="btn btn-secondary">1</button>
+                                   <button type="button" class="btn btn-secondary">2</button>
+                              </div>
                          </div>
                     </div>
                </div>

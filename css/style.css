@@ -1,131 +1,53 @@
-*{
-  box-sizing: border-box;
+
+body{
   font-family: 'Roboto', sans-serif;
 }
-
-.container{
-  width: 1170px;
-  margin: 0 auto;
-  position: relative;
-}
-
-a{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  transition: 0.2s;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul{
-  list-style-type: none;
-}
-/*
-.contact__part {
-  display: inline-block;
-
-}
-
-
-.contact__right{
-  position: absolute;
-  right: 20px;
-}
-
-.contact_item{
-  display: inline-block;
-  padding: 20px 10px;
-
-}
-
-*/
-
-.row:before,.row:after,
-.container:before, .container:after{
-  content: '';
-  display: table;
-}
-.row:after,
 .container:after{
+  content: '';
+  display: block;
   clear: both;
 }
-
 .top{
   background-color: #262626;
-  max-height: 50px;
+}
+
+.top-contacts{
+  float: left;
+  padding: 9px 0;
+}
+
+.top a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.top .top-contacts__link{
   font-size: 13px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  text-transform: none;
 }
-
-.top__contacts{
+.top-register{
   float: left;
+  padding: 9px 0;
 }
-
-.top__register,.top__social{
+.top-social{
+  font-size: 12px;
   float: right;
+  padding: 5px 0 0 10px;
 }
-
-.top__item{
-  float: left;
-
+.top-social__link{
+  color: red!important;
+}
+.top-social__link.facebook:hover{
 
 }
+.top-social__link.twitter:hover{
 
-.top__contacts__item{
-  padding-left: 5px;
-  padding-right: 5px;
 }
+.top-social__link.google:hover{
 
-
-.mail-icon,.phone-icon,
-.shutdown-icon,.lock-icon{
-  max-width: 18px;
-  position: relative;
-  bottom: 2px;
 }
-
-
-
-
-.mail-address, .tel-no, .not-a-member{
-  color: #cccccc;
-}
-
-.mail-address{
-  text-transform: lowercase;
-}
-
-.login{
-  padding-right: 10px;
-  padding-left: 5px;
-  border-right: 2px solid red;
-}
-
-.not-a-member{
-  padding-left: 10px;
-}
-
-.register{
-  padding: 0 2px;
-}
-
-.facebook-icon, .twitter-logo,.googleplus-logo{
-  max-height: 35px;
-  position: relative;
-  bottom:10px;
-  margin: 0 10px;
-}
-
-.top__contacts a:hover{
-  color: #ffffff;
-}
-
-.top__register a:hover{
-  color:#cccccc ;
+.top-register__link{
+  font-size: 13px;
 }
 
 /*End TOP */
@@ -134,10 +56,6 @@ ul{
   background-color: #404040;
 }
 
-.navigation .container{
-  height: 84px;
-  position: relative;
-}
 
 .logo-helper{
   display: inline-block;
@@ -149,23 +67,17 @@ ul{
   max-height: 50px;
   vertical-align: middle;
 }
-
-.menu{
-  float: right;
-  margin: 0;
-  padding: 30px 0;
-}
-
-.menu li{
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.menu__item a{
+.menu__item > .nav-link{
+  padding-top: 21px;
+  padding-bottom: 21px;
   font-family: 'Oswald', sans-serif;
+  border-bottom: 5px solid transparent;
+}
+.menu__item{
+  position: relative;
 }
 
-.menu__item a:hover{
+.menu__item > a.nav-link:hover{
   color: #cccccc;
   border-bottom: 5px solid red;
 }
@@ -174,12 +86,12 @@ ul{
   font-size: 11px ;
   background-color: red;
   color: #ffffff;
-  display: inline-block;
+  position: absolute;
+  top: 0;right: 0;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   text-align: center;
-  position: relative;
   bottom: 22px;
 }
 
@@ -201,24 +113,24 @@ ul{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";       /* IE 8 */
-  filter: alpha(opacity=70);  /* IE 5-7 */
-  -moz-opacity: 0.7;          /* Netscape */
-  -khtml-opacity: 0.7;        /* Safari 1.x */
-  opacity: 0.7;
+  background-color: rgba(0,0,0, 0.6);
 }
-
+.banner-content{
+  position: relative;
+  z-index: 9;
+  text-align: right;
+}
 .banner__title{
   font-size: 3.5rem;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .banner__title span{
-  font-family: 'Oswald', sans-serif;
+  color: red;
 }
 
 .banner__title__span{
@@ -228,13 +140,12 @@ ul{
 .banner__title__red{
   color: red;
 }
-
-.banner__order{
-  border: #ffffff 1px solid;
-  padding: 13px 20px;
+.banner__btn{
+  border: #fff 1px solid;
+  color: #fff;
 }
 
-.banner__order:hover{
+.banner__btn:hover{
   opacity: 0.5;
   color: #ffffff;
 }
