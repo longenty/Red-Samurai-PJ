@@ -67,6 +67,10 @@ body{
   max-height: 50px;
   vertical-align: middle;
 }
+
+.navbar-collapse{
+  text-align: center;
+}
 .menu__item > .nav-link{
   padding-top: 21px;
   padding-bottom: 21px;
@@ -303,4 +307,3 @@ body{
 .specials__add-button:hover{
   color: #000000;
 }
-
