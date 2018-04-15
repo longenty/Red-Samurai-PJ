@@ -1,0 +1,172 @@
+.container:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.top-lighthouse{
+	background: #1d1d1d;
+}
+.header-info{
+	float: left;
+	padding: 13px 0;
+}
+
+.header-info__icon{
+	color: #fff;
+}
+.header-info__link{
+	color: #676767;
+	display: inline-block;
+	padding-right: 20px;
+} 
+.header-info__link:hover,
+.header-info__link:focus{
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+
+
+.login-social{
+	float: right;
+}
+.block-login{
+	float: left;
+	padding: 13px 0;
+}
+.block-login span{
+	color: #676767;
+	display: inline-block;
+	border-left: 1px solid #ff0000;
+	padding-left: 10px;
+}
+.block-login__link{
+	color: #fff;
+	padding: 0 10px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.block-login__link:hover,
+.block-login__link:focus{
+	color: #676767;
+	text-decoration: none;
+}
+.block-social{
+	float: right;
+	margin-left: 15px;
+	padding: 10px 0;
+}
+.block-social__link{
+	font-size: 12px;
+}
+
+
+.main-nav-wrap{
+	background: #282828;
+}
+.main-menu{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.main-menu .navbar-nav .nav-link{
+	color: #fff;
+	text-transform: uppercase;
+	padding: 25px 15px;
+	border-bottom: 5px solid transparent;
+}
+.main-menu .navbar-nav .nav-link:focus, 
+.main-menu .navbar-nav .nav-link:hover,
+.main-menu .navbar-nav .active>.nav-link, 
+.main-menu .navbar-nav .nav-link.active, 
+.main-menu .navbar-nav .nav-link.show, 
+.main-menu .navbar-nav .show>.nav-link{
+	color: #fff;
+	border-bottom: 5px solid #ff0000;
+}
+
+
+
+.banner{
+	padding: 110px 0;
+	background: url('http://www.odindesign-themes.com/redsamurai-html/images/header-bg.jpg');
+	background-size: cover;
+}
+.banner-content{
+	text-align: right
+}
+.banner__title{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 55px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+.banner__title span{
+	color: #d72d2e;
+}
+.banner__btn{
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+}
+.banner__btn:hover,
+.banner__btn:focus{
+	background: #d72d2e;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+.featured{
+	padding: 45px 0;
+	background: #f8f8f8;
+}
+.featured-item{
+	text-align: center;
+	margin-bottom: 15px;
+}
+.featured-item-imgwrap{
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 50%;
+}
+.featured-item__img{
+	border-radius: 50%;
+}
+.featured-item__title{
+	margin: 15px 0;
+	color: #4c4c4c;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+.featuterd-item__desc{
+	color: #4c4c4c;
+}
+
+
+.section-heading{
+	
+	border-bottom: 1px solid #ccc;
+}
+.section-heading__title{
+	
+	padding: 0;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    /* line-height: 41px; */
+    margin: 0;
+}
+.section-heading__title span{
+	font-weight: normal;
+	display: inline-block;
+	padding: 15px 0;
+	display: inline-block;
+	border-bottom: 5px solid #ff0000;
+}
