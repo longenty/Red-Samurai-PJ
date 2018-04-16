@@ -21,6 +21,7 @@ body{
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .top .top-contacts__link{
   font-size: 13px;
   text-transform: none;
@@ -164,11 +165,11 @@ body{
   padding-bottom: 80px;
 }
 
-.foot-item{
+.food-item{
   text-align: center;
 }
 
-.foot-item__link{
+.food-item__link{
   text-transform: uppercase;
 }
 
@@ -319,30 +320,30 @@ body{
   background-color: #b30000;
 }
 
-.section-footer{
+.section-fooder{
   text-align: center;
   text-transform: uppercase;
 }
 
-.section-footer__lead{
+.section-fooder__lead{
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   color: #bfbfbf;
 
 }
 
-.section-footer__title{
+.section-fooder__title{
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: bold;
   color:#595959;
 }
 
-.section-footer__desc > span{
+.section-fooder__desc > span{
   color: red;
 }
 
-.section-footer__button > a{
+.section-fooder__button > a{
   font-size: 12px;
   color: white;
   background-color: red;
@@ -350,7 +351,7 @@ body{
   font-weight: bold;
 }
 
-.section-footer__button > a:hover{
+.section-fooder__button > a:hover{
   text-decoration: none;
   background-color: #b30000;
 }
@@ -536,6 +537,39 @@ body{
 .offers{
    margin-top: 50px;
 }
+
+.offers-body{
+  margin-top: 50px;
+}
+
+.offer-package__list{
+  padding-left: 0;
+}
+
+.offer-package__list{
+  background-color:  #262626;
+  padding: 7px 15px;
+}
+
+.offer-package__option{
+  list-style-type: none;
+  background-color:  #262626;
+  color: #e6e6e6;
+  padding: 7px 0 ;
+  border-bottom: 1px dashed #4d4d4d ;
+}
+
+
+
+.offer-package__item{
+  text-transform: uppercase;
+}
+
+.offer-package__number{
+  float: right;
+  color: red;
+}
+
 
 @media only screen and (min-width: 768px) {
    .banner__title {
