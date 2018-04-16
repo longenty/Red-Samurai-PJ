@@ -126,7 +126,7 @@ body{
   text-align: right;
 }
 .banner__title{
-  font-size: 3.5rem;
+  font-size: 2.5em;
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 0;
@@ -148,6 +148,7 @@ body{
 .banner__btn{
   border: #fff 1px solid;
   color: #fff;
+  font-size: 0.75rem;
 }
 
 .banner__btn:hover{
@@ -181,6 +182,7 @@ body{
   padding: 5px;
   background: #fff;
 }
+
 .food__img img{
   border-radius: 50%;
   max-width: 150px;max-height: 150px;
@@ -279,8 +281,7 @@ body{
 }
 .special__flag{
   position: absolute;
-  top: 0;left: 0;
-  background:#404040;
+  top: -7px;left: 0;
   width: 15px;height: 15px;
 }
 .specials__item__title{
@@ -318,19 +319,19 @@ body{
   background-color: #b30000;
 }
 
-.specials-footer{
+.section-footer{
   text-align: center;
   text-transform: uppercase;
 }
 
-.section-footer__title{
+.section-footer__lead{
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   color: #bfbfbf;
 
 }
 
-.section-footer__desc{
+.section-footer__title{
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -375,6 +376,10 @@ body{
   background-color: rgba(0,0,0, 0.9);
 }
 
+.ourteam-body{
+   margin-top: 60px;
+}
+
 .ourteam-item{
   text-align: center;
 }
@@ -401,4 +406,156 @@ body{
   margin-bottom: 25px;
 }
 
+.ourteam-item-imgwrap{
+   border: 1px solid #4d4d4d;
+   display: inline-block;
+   border-radius: 50%;
+   padding: 13px;
+   background-color: transparent;
+   margin-top: 10px;
+   margin-bottom: 15px;
+}
 
+.ourteam-item__img{
+   border-radius: 50%;
+   width: 200px; height: 200px;
+   border: 5px solid #b30000;
+
+}
+
+.ourteam-social__item{
+   color: red;
+   margin: 0 10px;
+   transition: 0.2s;
+}
+
+.ourteam-social__item:hover{
+   color: #b30000;
+}
+
+/* END OURTEAM */
+
+.ourhistory{
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.ourhistory-body{
+   margin-top: 30px;
+}
+
+.ourhistory-item .col-md-6{
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.ourhistory-item__img{
+   max-width: 100%;
+}
+
+.ourhistory-item__link{
+   text-transform: uppercase ;
+   text-decoration: none;
+   color:#404040;
+   font-family: 'Oswald', sans-serif;
+   transition: 0.2s;
+}
+
+.ourhistory-item__link span{
+   font-weight: bold;
+   color: red;
+   transition: 0.2s;
+}
+
+.ourhistory-item__link:hover{
+   text-decoration: none;
+   color: black;
+}
+
+.ourhistory-item__link:hover span{
+   color: #b30000;
+}
+
+.phone-order{
+   background: url("../image/order-bg.jpg") no-repeat center center;
+   background-size: cover;
+   position: relative;
+   max-height: 456px;
+}
+
+.phone-order__order-now__image{
+   position: relative;
+   bottom: 13px;
+}
+
+.phone-order__content{
+   margin-top: 30px;
+
+}
+
+.phone-order__title{
+   font-family: 'Oswald', sans-serif;
+   font-size: 1.75rem;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.phone-order__title span{
+   color: red;
+}
+
+.phone-order__desc{
+   color: #808080;
+   margin-top: 20px;
+}
+
+.phone-order__address,.phone-order__number{
+   text-align: right;
+}
+
+.phone-order__address span{
+   padding: 3px 10px;
+   background: red;
+   color:#fff;
+}
+
+.phone-order__number a{
+   font-family: 'Oswald', sans-serif;
+   font-weight: bold;
+   font-size: 2rem;
+   color: #fff;
+   text-decoration: none;
+   transition: 0.2s;
+}
+
+.phone-order__number a:hover{
+   color: #ccc;
+}
+
+/*END PHONE ORDER */
+.offers{
+   margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+   .banner__title {
+      font-size: 3.5em;
+   }
+
+   .banner__btn{
+      font-size: 1rem;
+   }
+
+   .phone-order__number a{
+      font-size: 2.5rem;
+   }
+
+}
+
+@media only screen and (min-width: 992px){
+   .phone-order__content{
+      position: relative;
+      top:150px;
+
+   }
+}
