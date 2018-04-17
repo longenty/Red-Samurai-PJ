@@ -672,6 +672,71 @@ body {
         color: #fff;
         font-style: italic;
     }
+
+}
+
+/*END TESTIMONIAL */
+
+
+.contact-us{
+    padding: 70px 0;
+    &__body {
+        margin-top: 50px;
+    }
+        h5{
+            font-family: $font-secondary;
+            font-weight: bold;
+            text-transform: uppercase;
+            & + span{
+                font-size: 0.85rem;
+                color: #bfbfbf;
+            }
+
+        }
+    &__img{
+        max-width: 100px;
+        max-height: 100px;
+        border-radius: 50%;
+        border: 8px solid $color-secondary;
+        &-wrapper{
+            display: inline-block;
+            padding: 8px;
+            background-color: #fff;
+            border: 1px solid #bfbfbf;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+    &__form{
+        margin-top: 50px;
+        &__item{
+            background-color: #f2f2f2;
+        }
+        label{
+            color:#4d4d4d;
+        }
+    }
+    &__submit-btn{
+        text-transform: uppercase;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 40px;
+        font-weight: bold;
+        color: white;
+        background: $color-primary;
+        transition: $transition;
+        &:hover{
+            background-color: $color-secondary;
+        }
+    }
+}
+
+.media-body{
+    line-height: 14px;
+}
+
+::-webkit-input-placeholder{
+    font-style: italic;
 }
 
 @media only screen and (min-width: 768px) {
