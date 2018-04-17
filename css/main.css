@@ -29,7 +29,13 @@ body {
     float: right;
     padding: 5px 0 0 10px; }
   .top-social__link {
-    color: red !important; }
+    color: #db2e2e !important; }
+    .top-social__link.facebook:hover {
+      color: #c22121; }
+    .top-social__link.twitter:hover {
+      color: #c22121; }
+    .top-social__link .google:hover {
+      color: #c22121; }
   .top-register__link {
     font-size: 13px; }
 
@@ -59,11 +65,11 @@ body {
     font-family: "Oswald", sans-serif; }
     .menu__item .nav-link:hover {
       color: #cccccc;
-      border-bottom: 5px solid red; }
+      border-bottom: 5px solid #db2e2e; }
 
 .cart-item-number {
   font-size: 11px;
-  background-color: red;
+  background-color: #db2e2e;
   color: #ffffff;
   position: absolute;
   top: 0;
@@ -125,14 +131,14 @@ body {
     .food-item__link {
       text-transform: uppercase;
       padding: 10px 25px;
-      background-color: red;
+      background-color: #db2e2e;
       color: white;
       font-weight: bold;
       font-size: 14px; }
       .food-item__link:hover {
         background-color: #f2f2f2;
-        color: red;
-        border: 1px solid red; }
+        color: #db2e2e;
+        border: 1px solid #db2e2e; }
     .food-item__component {
       margin: 15px 0; }
     .food-item__imgwrap {
@@ -145,7 +151,7 @@ body {
       border-radius: 50%;
       max-width: 150px;
       max-height: 150px;
-      border: 5px solid #b30000; }
+      border: 5px solid #db2e2e; }
 
 /*END FOODS SECTION */
 .section-heading {
@@ -157,7 +163,7 @@ body {
     bottom: 0;
     left: 0;
     width: 150px;
-    border: 2px solid #b30000; }
+    border: 2px solid #c22121; }
   .section-heading__title {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
@@ -193,7 +199,7 @@ body {
     .specials__link img {
       max-width: 150px;
       max-height: 150px;
-      border: 5px solid #b30000;
+      border: 5px solid #db2e2e;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
@@ -211,7 +217,7 @@ body {
       -ms-border-radius: 50%;
       border-radius: 50%; }
     .specials__link:after {
-      transition: 0.3s; }
+      transition: 0.2s; }
 
 .specials__flag {
   position: absolute;
@@ -243,13 +249,13 @@ body {
   .specials-item__price {
     background-color: #262626; }
   .specials-item__add-button {
-    background-color: red;
+    background-color: #db2e2e;
     text-transform: uppercase;
     transition: 0.2s; }
     .specials-item__add-button:hover {
       color: #fff;
       text-decoration: none;
-      background-color: #b30000; }
+      background-color: #c22121; }
 
 .section-footer {
   text-align: center;
@@ -263,17 +269,19 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: #595959; }
+    .section-footer__title span {
+      color: #db2e2e; }
   .section-footer__desc > span {
-    color: red; }
+    color: #db2e2e; }
   .section-footer__button > a {
     font-size: 12px;
     color: white;
-    background-color: red;
+    background-color: #db2e2e;
     padding: 8px 18px;
     font-weight: bold; }
     .section-footer__button > a:hover {
       text-decoration: none;
-      background-color: #b30000; }
+      background-color: #c22121; }
 
 /* END SPECIALS SECTION*/
 .ourteam {
@@ -291,159 +299,223 @@ body {
     background-color: rgba(0, 0, 0, 0.9); }
   .ourteam-body {
     margin-top: 60px; }
-
-.ourteam-item {
-  text-align: center; }
-
-.ourteam-heading__title, .ourteam-item {
-  color: #fff; }
-
-.ourteam-item__name {
-  font-weight: bold;
-  font-family: "Oswald", sans-serif; }
-
-.ourteam-item__position {
-  color: red;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: bold; }
-
-.ourteam-item__desc {
-  color: #808080;
-  margin-top: 10px;
-  margin-bottom: 25px; }
-
-.ourteam-item-imgwrap {
-  border: 1px solid #4d4d4d;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 13px;
-  background-color: transparent;
-  margin-top: 10px;
-  margin-bottom: 15px; }
-
-.ourteam-item__img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  border: 5px solid #b30000; }
-
-.ourteam-social__item {
-  color: red;
-  margin: 0 10px;
-  transition: 0.2s; }
-
-.ourteam-social__item:hover {
-  color: #b30000; }
+  .ourteam-item {
+    text-align: center;
+    color: #fff; }
+    .ourteam-item__name {
+      font-weight: bold;
+      font-family: "Oswald", sans-serif; }
+    .ourteam-item__position {
+      color: #db2e2e;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold; }
+    .ourteam-item__desc {
+      color: #808080;
+      margin-top: 10px;
+      margin-bottom: 25px; }
+    .ourteam-item-imgwrap {
+      border: 1px solid #4d4d4d;
+      display: inline-block;
+      border-radius: 50%;
+      padding: 13px;
+      background-color: transparent;
+      margin-top: 10px;
+      margin-bottom: 15px; }
+    .ourteam-item__img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      border: 5px solid #db2e2e; }
+  .ourteam-heading__title {
+    color: #fff; }
+  .ourteam-social__item {
+    color: #db2e2e;
+    margin: 0 10px;
+    transition: 0.2s; }
+    .ourteam-social__item:hover {
+      color: #c22121; }
 
 /* END OURTEAM */
 .ourhistory {
   margin-top: 50px;
   margin-bottom: 50px; }
+  .ourhistory-body {
+    margin-top: 30px; }
+  .ourhistory-item .col-md-6 {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .ourhistory-item__img {
+    max-width: 100%; }
+  .ourhistory-item__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #404040;
+    font-family: "Oswald", sans-serif;
+    transition: 0.2s; }
+    .ourhistory-item__link:hover {
+      text-decoration: none;
+      color: black; }
+      .ourhistory-item__link:hover span {
+        color: #c22121; }
+    .ourhistory-item__link span {
+      font-weight: bold;
+      color: #db2e2e;
+      transition: 0.2s; }
 
-.ourhistory-body {
-  margin-top: 30px; }
-
-.ourhistory-item .col-md-6 {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.ourhistory-item__img {
-  max-width: 100%; }
-
-.ourhistory-item__link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #404040;
-  font-family: "Oswald", sans-serif;
-  transition: 0.2s; }
-
-.ourhistory-item__link span {
-  font-weight: bold;
-  color: red;
-  transition: 0.2s; }
-
-.ourhistory-item__link:hover {
-  text-decoration: none;
-  color: black; }
-
-.ourhistory-item__link:hover span {
-  color: #b30000; }
-
+/* END OUR HISTORY */
 .phone-order {
   background: url("../image/order-bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   max-height: 456px; }
-
-.phone-order__order-now__image {
-  position: relative;
-  bottom: 13px; }
-
-.phone-order__content {
-  margin-top: 30px; }
-
-.phone-order__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.75rem;
-  text-transform: uppercase;
-  color: #fff; }
-
-.phone-order__title span {
-  color: red; }
-
-.phone-order__desc {
-  color: #808080;
-  margin-top: 20px; }
-
-.phone-order__address, .phone-order__number {
-  text-align: right; }
-
-.phone-order__address span {
-  padding: 3px 10px;
-  background: red;
-  color: #fff; }
-
-.phone-order__number a {
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.2s; }
-
-.phone-order__number a:hover {
-  color: #ccc; }
+  .phone-order__order-now__image {
+    position: relative;
+    bottom: 13px; }
+  .phone-order__content {
+    margin-top: 30px; }
+  .phone-order__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    color: #fff; }
+    .phone-order__title span {
+      color: #db2e2e; }
+  .phone-order__desc {
+    color: #808080;
+    margin-top: 20px; }
+  .phone-order__address {
+    text-align: right; }
+    .phone-order__address span {
+      padding: 3px 10px;
+      background: #db2e2e;
+      color: #fff; }
+  .phone-order__number {
+    text-align: right; }
+    .phone-order__number a {
+      font-family: "Oswald", sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none;
+      transition: 0.2s; }
+      .phone-order__number a:hover {
+        color: #ccc; }
 
 /*END PHONE ORDER */
-.offers {
+.offer {
   margin-top: 50px; }
+  .offer-body {
+    margin-top: 50px; }
+  .offer-package {
+    position: relative; }
+    .offer-package__list {
+      padding-left: 0;
+      background-color: #262626;
+      padding: 7px 15px;
+      margin: 0 31px; }
+    .offer-package__option {
+      list-style-type: none;
+      background-color: #262626;
+      color: #e6e6e6;
+      padding: 7px 0;
+      border-bottom: 1px dashed #4d4d4d; }
+    .offer-package__item {
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif; }
+    .offer-package__number {
+      float: right;
+      color: #db2e2e; }
+    .offer-package .row {
+      position: absolute;
+      bottom: 180px;
+      left: 60px; }
+    .offer-package__name {
+      font-family: "Oswald", sans-serif;
+      font-size: 26px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      line-height: 25px;
+      position: relative;
+      top: 18px; }
+      .offer-package__name-wrapper {
+        position: relative;
+        top: 10px;
+        right: 20px; }
+    .offer-package__cost {
+      font-family: "Oswald", sans-serif;
+      font-size: 55px;
+      font-weight: bold;
+      color: white; }
+      .offer-package__cost-wrapper {
+        position: relative;
+        right: 30px;
+        top: 10px; }
+  .offer-share {
+    text-align: center;
+    position: relative;
+    bottom: 87px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif; }
+    .offer-share + img {
+      position: absolute;
+      bottom: 36px;
+      left: 91px; }
+  .offer__btnaddtocart {
+    background-color: #db2e2e;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.65rem;
+    padding: 8px 21px;
+    color: white;
+    position: relative;
+    bottom: 36px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s; }
+    .offer__btnaddtocart:hover {
+      background-color: #c22121; }
+  .offer-footer {
+    padding-top: 50px;
+    padding-bottom: 100px; }
+    .offer-footer__lead {
+      display: block;
+      margin-bottom: 13px; }
+    .offer-footer__title {
+      margin-bottom: 15px; }
+    .offer-footer__desc {
+      text-transform: lowercase;
+      color: #4d4d4d; }
 
-.offers-body {
-  margin-top: 50px; }
-
-.offer-package__list {
-  padding-left: 0; }
-
-.offer-package__list {
-  background-color: #262626;
-  padding: 7px 15px;
-  margin: 0 30px
-}
-
-.offer-package__option {
-  list-style-type: none;
-  background-color: #262626;
-  color: #e6e6e6;
-  padding: 7px 0;
-  border-bottom: 1px dashed #4d4d4d; }
-
-.offer-package__item {
-  text-transform: uppercase; }
-
-.offer-package__number {
-  float: right;
-  color: red; }
+/* END OFFER SECTION */
+.testimonial {
+  background: url("../image/reviews-bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center; }
+  .testimonial__imgwrap {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #b3b3b3;
+    background-color: transparent; }
+  .testimonial__img {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px;
+    border: 5px solid #db2e2e; }
+  .testimonial__content {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase; }
+  .testimonial__position {
+    color: #fff;
+    font-style: italic; }
 
 @media only screen and (min-width: 768px) {
   .banner__title {
@@ -458,3 +530,5 @@ body {
   .phone-order__content {
     position: relative;
     top: 150px; } }
+
+/*# sourceMappingURL=main.css.map */
