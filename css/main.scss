@@ -36,6 +36,10 @@ body {
         &__link {
             font-size: 13px;
             text-transform: none;
+            transition: $transition;
+            &:hover{
+              color:$color-secondary;
+          }
         }
     }
 
@@ -63,6 +67,10 @@ body {
     &-register__link {
         font-size: 13px;
     }
+}
+
+.not-a-member{
+  color:#ccc;
 }
 
 /*End TOP */
@@ -153,9 +161,12 @@ body {
         border: #fff 1px solid;
         color: #fff;
         font-size: 0.75rem;
+        transition: $transition;
         &:hover{
-            opacity: 0.5;
-            color: #ffffff;
+            background-color: $color-secondary;
+            color: #fff;
+            border:1px solid $color-secondary;
+            font-weight: bold;
         }
     }
 }

@@ -20,7 +20,10 @@ body {
     padding: 9px 0; }
     .top-contacts__link {
       font-size: 13px;
-      text-transform: none; }
+      text-transform: none;
+      transition: 0.2s; }
+      .top-contacts__link:hover {
+        color: #c22121; }
   .top-register {
     float: left;
     padding: 9px 0; }
@@ -38,6 +41,9 @@ body {
       color: #c22121; }
   .top-register__link {
     font-size: 13px; }
+
+.not-a-member {
+  color: #ccc; }
 
 /*End TOP */
 .navigation {
@@ -112,10 +118,13 @@ body {
   .banner__btn {
     border: #fff 1px solid;
     color: #fff;
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    transition: 0.2s; }
     .banner__btn:hover {
-      opacity: 0.5;
-      color: #ffffff; }
+      background-color: #c22121;
+      color: #fff;
+      border: 1px solid #c22121;
+      font-weight: bold; }
 
 /* END BANNER*/
 .food {
@@ -578,3 +587,5 @@ body {
   .phone-order__content {
     position: relative;
     top: 150px; } }
+
+/*# sourceMappingURL=main.css.map */
